@@ -1,3 +1,114 @@
-body {
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* Element or type selector */
+header {
+  background-color: purple;
+}
+
+/* Element or type selector */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* class selector */
+.menu {
+  display: flex;
+  gap: 2em;
+}
+
+/* Element or type selector */
+li {
+  color: white;
+  list-style: none;
+}
+
+/* target the first type of the list items  */
+li:first-of-type {
+  color: blue;
+}
+/* target the last type of the list items */
+li:last-of-type {
+  color: darkgreen;
+}
+
+/* target a particular list item via its position */
+li:nth-of-type(2) {
+  background-color: yellow;
+}
+li:nth-of-type(3) {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+/* id selector */
+#special {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+/* class selector */
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding-inline: 20px;
+  padding-block: 50px;
+}
+
+/* Element or type selector */
+h1 {
+  font-size: 40px;
+}
+
+/* pseudo element for h1 */
+h1::after {
+  content: "";
+}
+
+/* class selector */
+.description {
+  font-size: 16px;
+  margin-block: 20px;
+}
+
+/* class selector */
+.cta {
+  padding-block: 20px;
+}
+
+/* attribute selector */
+[href] {
+  background-color: green;
+  padding: 20px 40px;
+  color: white;
+}
+
+/* pseudo class */
+[href]:hover {
+  background-color: blueviolet;
+}
+
+/* attribute selector */
+[href="/download"] {
+  background-color: blue;
+}
+
+/* attribute selector */
+[href="/cancel"] {
   background-color: red;
+}
+
+/* Group selectors */
+strong,
+em,
+span {
+  color: blue;
 }
