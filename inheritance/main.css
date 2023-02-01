@@ -1,0 +1,23 @@
+/* color property will be inherited by the child elemebts of the html as css cascades down */
+/* html {
+  color: aquamarine;
+} */
+
+p {
+  color: red;
+}
+
+.parent {
+  background-color: green;
+  color: white;
+}
+
+@media (max-width: 100px) {
+  .parent {
+    background-color: unset;
+  }
+}
+
+.child {
+  color: unset;
+}
