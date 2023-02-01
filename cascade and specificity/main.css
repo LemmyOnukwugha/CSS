@@ -1,0 +1,33 @@
+/* id selectors have a specificity level of 100 */
+#btn {
+  background-color: antiquewhite;
+}
+
+/* class, pseudo-class or attribute selector, the specificity level is 10 */
+.btn {
+  background-color: red;
+}
+
+[data-type] {
+  background-color: blueviolet;
+}
+
+/* type or element and pseudo-element selector have a specificity level of 1 */
+button {
+  /* !important rule overrides all other styling, it has a specificity level of 10,000*/
+  background-color: yellow !important;
+}
+
+/* universal selector has a specificity level equals 0 */
+
+* {
+  background-color: black;
+}
+
+.btn {
+  background-color: blue;
+}
+
+.btn.active {
+  background-color: white;
+}
