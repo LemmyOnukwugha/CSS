@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0.5turn 40% 60%);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+li {
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255);
+}
+
+li:nth-of-type(1) {
+  background-color: hsl(276, 100%, 80%);
+}
+li:nth-of-type(2) {
+  background-color: hsl(276, 100%, 70%);
+}
+li:nth-of-type(3) {
+  background-color: hsl(276, 100%, 60%);
+}
+li:nth-of-type(4) {
+  background-color: hsl(276, 100%, 50%);
+}
+li:nth-of-type(5) {
+  background-color: hsl(276, 100%, 10%, 0.5);
+}
