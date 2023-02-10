@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px 70px 50px;
+  grid-template-areas:
+    "one . seven"
+    "three four four"
+    "five six two";
   /* gap: 0.5em; */
 }
 
@@ -13,10 +17,11 @@
 }
 
 .box:nth-of-type(1) {
-  grid-column: 1/2;
-  grid-row: 1/4;
+  /* grid-column: 1/2;
+  grid-row: 1/4; */
   background-color: hsl(180, 40%, 50%);
 }
+
 .box:nth-of-type(2) {
   background-color: hsl(120, 40%, 50%);
 }
@@ -33,8 +38,9 @@
   /* grid-column-start: 1;
   grid-column-end: 4; */
   /* grid-column: 1/4; */
-  grid-column: 2/4;
-  grid-row: 2/3;
+  /* grid-column: 2/4;
+  grid-row: 2/3; */
+
   background-color: hsl(100, 40%, 50%);
 }
 .box:nth-of-type(6) {
@@ -42,4 +48,26 @@
 }
 .box:nth-of-type(7) {
   background-color: hsl(270, 40%, 50%);
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
 }
