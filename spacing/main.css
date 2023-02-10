@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+}
+
+.box {
+  height: 5em;
+  width: 5em;
+  background: red;
+}
+
+#first_box {
+  /* margin with four values */
+  margin: 10px 12px 14px 16px;
+  /* margin with three values */
+  margin: 10px 14px 16px;
+  /* margin with two values */
+  margin: 10px 16px;
+  /* margin with one values */
+  margin: 16px;
+}
